@@ -1,0 +1,1347 @@
+/* -------------------------------------------------------- */
+/* -- PROJECT INFORMATION --------------------------------- */
+/* -------------------------------------------------------- */
+
+/* COLORS
+
+1. SET NAME: FLAT UI PALETTE
+
+    Emerald #2ecc71 
+    Nephritis #27ae60 
+    Clouds #ecf0f1 
+    Silver #bdc3c7 
+
+2. SET NAME: DUTCH PALETTE
+
+    Energos #C4E538
+    Android Green #A3CB38
+    Pixelated Grass #009432
+
+From Flat UI Colors: https://flatuicolors.com/palette/defo
+
+*/
+
+
+/* STRUCTURE
+
+    Pre-Loader
+
+    Slide Zero
+    Intro-ANimation
+        Navigation Bar
+        Company Logo Animation (Intro)
+        Attritbution
+
+        Slide One
+            What can Clover Cloud do for Business?
+
+        Slide Two
+            What is Clover Cloud?
+
+            Azure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters. Integrated tools, DevOps, and a marketplace support you in efficiently building anything from simple mobile apps to internet-scale solutions.
+
+        Slide Three
+            Real-time analytics and data tracking
+
+        Slide Four
+            Cost & Scale
+
+        Slide Five
+            Productivity
+
+        Slide Six
+            Fortune 500 companies
+
+    Outro
+
+*/
+
+
+/*
+
+Z-INDEX
+
+0-100       Pre-Loader
+101-200     NAV Bar
+201-300     Slide #1
+301-400     Slide #2
+401-500     Slide #3
+501-600     Slide #4
+701-800     Slide #5
+801-900     Slide #6
+901-1000    OUTRO
+
+
+*/
+
+
+/* --------------------------------------------------- */
+/* -- BASIC HTML ELEMENTS ---------------------------- */
+/* --------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    padding: 0;
+    margin: 0;
+    }
+
+html {
+    background-color: #262626;
+    text-rendering: optimizeLegibility;
+    }
+
+.clearfix {zoom: 1;}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    }
+
+.frame {
+    position:absolute;
+    height: 720px;
+    width:1280px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 9000;
+    opacity: 0.75;
+    }
+
+/* ---------------------------------------------------- */
+/* -- Pre-Loader content ------------------------------ */
+/* ---------------------------------------------------- */
+
+.preLoaderContainer {
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);  
+    z-index: 6000;
+/*    border: 1px solid red;*/
+    }
+
+#insidePreloader {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    }
+
+li {
+    display: inline-block;
+    list-style: none;
+    align-content: center;
+    transform: rotate(180deg);
+    padding: 0 0;
+    }
+
+.mask {
+    width: 1px;
+    height: 2px;
+    overflow: hidden;
+    position: fixed;
+    }
+
+.color {
+    width: 32px;
+    height: 96px;
+    }
+
+/* ------------------------------------------------------- */
+/* -- MAIN ELEMENT --------------------------------------- */
+/* ------------------------------------------------------- */
+
+.background {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+/*    background-color: #2ecc71;*/
+    background:linear-gradient(-45deg, #C4E538, #009432);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #242424;
+    }
+
+
+/* ------------------------------------------------------- */
+/* -- SLIDE #0 - Intro Animation ------------------------- */
+/* ------------------------------------------------------- */
+
+.slideZero {
+    position: absolute;
+    width:1280px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+/*    overflow: hidden;*/
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    background-image: url("../img/texture/FeltTileBKGRD.png");
+/*    background-blend-mode: color;*/
+    background-repeat: repeat;
+    }
+
+/* "Data Logistics Management" */
+
+.text9CAT {
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 475px;
+    font-size: 10px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 8px;
+    border-top: 1px solid #009432;
+    z-index: 15;
+    opacity: 1;
+    }
+
+/*Business Made Easier*/
+
+.text9Subhead {
+    position: absolute;
+    top: 412px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 450px;
+    font-size: 16px;
+    color: aliceblue;
+/*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 15;
+    opacity: 1;
+    }
+
+/*Clover Systems*/
+
+.text9 {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 450px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 15;
+    opacity: 1;
+    }
+
+.cloverLogoIntro {
+    position: absolute;
+    width: 64px; 
+    height: 64px;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 20px 0;
+    border-color: aliceblue;
+    z-index: 1000;
+    opacity: 1;
+}
+
+
+/* ------------------------------------------------------------- */
+/* -- SLIDE #HALF - WHAT IS CLOVER CLOUD ----------------------- */
+/* ------------------------------------------------------------- */
+
+.slideHalf {
+    position: absolute;
+    width:1280px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    background-image: url("../img/texture/FeltTileBKGRD.png");
+/*    background-blend-mode: color;*/
+/*    background-repeat: repeat;*/
+    z-index: -20;
+    }
+
+.slideHalfText1 {
+    position: absolute;
+/*    justify-content: center;*/
+    text-align: center;
+    top: 43%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+/*    max-width: 450px;*/
+    font-size: 28px;
+/*    color: #009432;*/
+    color: #5a5a5a;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 0.25em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 15;
+    }
+
+.slideHalfText2 {
+    position: absolute;
+/*    justify-content: center;*/
+    text-align: center;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+/*    max-width: 450px;*/
+    font-size: 56px;
+    color: #009432;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+/*    line-height: 0.25em;*/
+/*    color: linear-gradient(-45deg, #C4E538, #009432); DOESN'T WORK*/
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 15;
+    }
+
+.slideHalfText3 {
+    position: absolute;
+/*    justify-content: center;*/
+    text-align: center;
+    top: 57%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+/*    max-width: 450px;*/
+    font-size: 28px;
+/*    color: #009432;*/
+    color: #5a5a5a;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+/*    line-height: 0.25em;*/
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 15;
+    }
+
+.cloverCloudIcon {
+ position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 355px;
+    left: 915px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 16;
+    opacity: 1;
+    }
+
+.whiteOverlayOnVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 720px;
+    width: 1280px;
+/*    background:linear-gradient(-45deg, rgba(196, 229, 56, 0.25), rgba(0, 148, 50, 0.2));*/
+    background-color: rgba(255, 255, 255, 0.58);
+/*    background-blend-mode: color;*/
+    opacity:1;
+    z-index: 13;
+    }
+
+#meetingVid { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    width: 1300px;
+/*    width: 1280px;*/
+    height: 740px;
+/*    height: 720px;*/
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+/*    background-image: linear-gradient(rgba(200, 0, 0, 0.5), rgba(0, 0, 0, 0.8));*/
+    background-size: cover; 
+    filter: blur(12px);
+    z-index: 10;
+    }
+
+/* --------------------------------------------------------- */
+/* -- SLIDE #1 - WHAT IS CLOVER CLOUD ---------------------- */
+/* --------------------------------------------------------- */
+
+.slideOne {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+    z-index: 2000;
+    }
+
+.slideOneSubHeader {
+    position: absolute;
+    top: 150px;
+    left: 199px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 700;
+    letter-spacing: 0.0825em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    }
+
+.slideOneHeader {
+    position: absolute;
+    top: 128px;
+    left: 162px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "Focus on building great applications, not babysitting hardware" */
+
+.text4 {
+    position: absolute;
+    top: 389px;
+    left: 172px;
+    transform: translate(-50%, -50%);
+    max-width: 475px;
+    font-size: 22px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+
+.cloud1 {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 296px;
+    left: 320px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.cloud2 {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 300px;
+    left: 540px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.cloud3 {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 296px;
+    left: 760px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.cloud4 {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 300px;
+    left: 980px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.profileIcon1 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 450px;
+    left: 320px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.profileIcon2 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 450px;
+    left: 540px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.profileIcon3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 450px;
+    left: 760px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+.profileIcon4 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 450px;
+    left: 980px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 0;
+    }
+
+/* ------------------------------------------------------ */
+/* -- SLIDE #2 - REAL TIME ANALYTICS -------------------- */
+/* ------------------------------------------------------ */
+
+.slideTwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    }
+
+.slideTwoHeader {
+    position: absolute;
+    top: 128px;
+    left: 162px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "Convenient health monitoring and alerts" */
+
+.text5 {
+    position: absolute;
+    top: 351px;
+    left: 167px;
+    transform: translate(-50%, -50%);
+    max-width: 475px;
+    font-size: 22px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+
+.dashes {
+    position: absolute;
+    width: 1105px;
+/*    height: 720px;*/
+    left: 592px;
+    top: 365px;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 1;
+    }
+
+
+.graphContainer {
+    position: absolute;
+    width:1080px;
+    height: 240px;
+    top: 437px;
+    left: 640px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+/*    border: 1px solid red;*/
+    }
+
+.graphWave1 {
+    position: absolute;
+    width: 2783.5px;
+    height: 720px;
+    top: -10px;
+    left: -6px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+    border: 2px solid red;
+    z-index: 500;
+    opacity: 1;
+    }
+
+.graphWave2 {
+    position: absolute;
+    width: 2783.5px;
+    height: 720px;
+    top: -10px;
+    left: -6px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+    z-index: 500;
+    opacity: 1;
+    }
+
+.graphWave3 {
+    position: absolute;
+    width: 2783.5px;
+    height: 720px;
+    top: -10px;
+    left: -6px;
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+    z-index: 500;
+    opacity: 1;
+    }
+
+/* --------------------------------------------------------- */
+/* -- SLIDE #3 - REAL TIME ANALYTICS ----------------------- */
+/* --------------------------------------------------------- */
+
+.slideThreeContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    }
+
+
+.slideThreeHeader {
+    position: absolute;
+    top: 190px;
+    left: 151px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 700;
+    letter-spacing: 0.0825em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    }
+
+.slideThreeSubHeader {
+    position: absolute;
+    top: 128px;
+    left: 162px;
+    transform: translate(-50%, -50%);
+/*    text-align: center;*/
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "Autoscale to optimize cost and performance" */
+
+.slide3AdvantageDescription {
+    position: absolute;
+    top: 370px;
+    left: 172px;
+    transform: translate(-50%, -50%);
+    max-width: 525px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+
+.building1 {
+    position: absolute;
+    width: 150px;
+    top: 455px;
+    left: 320px;
+    transform: translate(-50%, -50%);
+    z-index: 9000;
+    opacity: 1;
+    }
+
+.building2 {
+    position: absolute;
+    width: 150px;
+    top: 383px;
+    left: 640px;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 1;
+    }
+
+.building3 {
+    position: absolute;
+    width: 150px;
+    top: 301px;
+    left: 960px;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 1;
+    }
+
+/* ----------------------------------------------------- */
+/* -- SLIDE #5 - REAL TIME ANALYTICS ------------------- */
+/* ----------------------------------------------------- */
+
+.slideFiveContainer {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    overflow: hidden;
+    opacity: 0;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    }
+
+.slideFiveHeader {
+    position: absolute;
+    top: 209px;
+    left: 228px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    }
+
+.slideFiveSubHeader {
+    position: absolute;
+    top: 150px;
+    left: 238px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "The cloud based solution used by the majority of Fortune 500 companies" */
+
+.slideFiveBodyCopy {
+    position: absolute;
+    top: 325px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    max-width: 475px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+
+.fortune500MainLogo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    opacity: 1;
+    }
+
+.F500CompanyLogos {
+    position: absolute;
+    width: 720px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+/*    z-index: 20;*/
+    }
+
+
+
+
+/* ------------------------------------------------------ */
+/* -- SLIDE #8 - Handshake ------------------ */
+/* ------------------------------------------------------ */
+.slideEightContainer {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    }
+
+.slideEightHeader {
+    position: absolute;
+    top: 209px;
+    left: 228px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    }
+
+.slideEightSubHeader {
+    position: absolute;
+    top: 150px;
+    left: 238px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "The cloud based solution used by the majority of Fortune 500 companies" */
+
+.slideEightBodyCopy {
+    position: absolute;
+    top: 325px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    max-width: 475px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+.whiteOverlayOnVideo3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 720px;
+    width: 1280px;
+/*    background:linear-gradient(-45deg, rgba(196, 229, 56, 0.25), rgba(0, 148, 50, 0.2));*/
+    background-color: rgba(255, 255, 255, 0.58);
+/*    background-blend-mode: color;*/
+    opacity:0;
+    z-index: 13;
+    }
+
+.handshake {
+    
+}
+
+#handshakeVid { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    width: 1300px;
+/*    width: 1280px;*/
+    height: 740px;
+/*    height: 720px;*/
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+/*    background-image: linear-gradient(rgba(200, 0, 0, 0.5), rgba(0, 0, 0, 0.8));*/
+    background-size: cover; 
+    filter: blur(1px);
+    opacity: 1;
+    z-index: -50;
+    }
+/* ------------------------------------------------------ */
+/* -- SLIDE #7 - What is Clover Cloud? ------------------ */
+/* ------------------------------------------------------ */
+
+.slideSeven {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 1;
+/*    background-color: blueviolet;*/
+    z-index: 2000;
+    }
+
+
+.slideSevenHeader {
+    position: absolute;
+    top: 209px;
+    left: 207px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 700;
+    letter-spacing: 0.0825em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    }
+
+.slideSevenSubHead {
+    position: absolute;
+    top: 150px;
+    left: 214px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+/*    max-width: 450px;*/
+    font-size: 16px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+/*    z-index: 15;*/
+    opacity: 1; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid aliceblue;
+    }
+
+/* "Focus on building great applications, not babysitting hardware" */
+
+.slideSevenBodyCopy {
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    max-width: 475px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+/*    text-transform: uppercase;*/
+    opacity: 1;
+    }
+
+.WhatisCloud {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+/*    top: 296px;*/
+/*    left: 320px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    opacity: 1;
+    }
+
+.laptop {
+    
+}
+
+.whiteOverlayOnVideo2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 720px;
+    width: 1280px;
+/*    background:linear-gradient(-45deg, rgba(196, 229, 56, 0.25), rgba(0, 148, 50, 0.2));*/
+    background-color: rgba(88, 88, 88, 0.58);
+/*    background-blend-mode: color;*/
+    opacity:0;
+    z-index: -50;
+    }
+
+#laptopVid { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+    width: 1300px;
+/*    width: 1280px;*/
+    height: 740px;
+/*    height: 720px;*/
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+/*    background-image: linear-gradient(rgba(200, 0, 0, 0.5), rgba(0, 0, 0, 0.8));*/
+    background-size: cover; 
+    filter: blur(1px);
+    z-index: 0;
+    opacity: 1;
+    }
+/* ------------------------------------------------- */
+/* -- SLIDE #6 - OUTRO ----------------------------- */
+/* ------------------------------------------------- */
+
+.slideSix {
+    position: absolute;
+    width:1280px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+/*    overflow: hidden;*/
+    opacity: 1;
+/*    background-color: blueviolet;*/
+/*    z-index: 20;*/
+    background-image: url("../img/texture/FeltTileBKGRD.png");
+/*    background-blend-mode: color;*/
+    background-repeat: repeat;
+    }
+
+.slideSixCompanyWordmark {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 450px;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 15;
+    opacity: 1;
+    }
+
+.slideSixSubHead {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 450px;
+    font-size: 16px;
+    color: aliceblue;
+/*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 15;
+    opacity: 1;
+    }
+
+
+.slideSixCompanyTraits {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 475px;
+    font-size: 10px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 6px;
+    border-top: 1px solid #009432;
+    z-index: 15;
+    opacity: 1;
+    }
+
+.slideSixCloverLogo {
+    position: absolute;
+    width: 64px; 
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 20px 0;
+/*    margin: 0 0 20px 0;*/
+    border-color: aliceblue;
+	border-width:0px;
+/*    border-bottom: 2px solid aliceblue;*/
+    z-index: 20;
+}
+
+.callToActionLink {
+    position: absolute;
+    width: 128px; 
+    height: 64px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    border: 2px solid red;
+    padding: 0 0 20px 0;
+/*    margin: 0 0 20px 0;*/
+    border-color: aliceblue;
+	border-width:0px;
+/*    border-bottom: 2px solid aliceblue;*/
+    border-radius: 25px;
+    z-index: 20;
+    }
+
+/* --------------------------------------------------- */
+/* -- TEXT SPAN STYLING ------------------------------ */
+/* --------------------------------------------------- */
+
+.bold900 {
+/*    font-size: 56px;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    }
+
+.light200 {
+    font-size: 56px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.light200sub {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+/* ------------------------------------------------- */
+/* -- NAVIGATION BAR ------------------------------- */
+/* ------------------------------------------------- */
+
+.NAV-bar {
+    height: 50px;
+    width: 63%;
+    z-index: 500;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    }
+
+.NAV-bar button {
+    width:100px;
+    padding: 0 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: #272727;
+/*    border-bottom-color: aliceblue;*/
+    margin: auto;
+}
+
+.NAV-bar button:hover {
+    background-color: #181818;
+    }
+
+.NAV-bar img {
+/*    cursor: pointer;*/
+    }
+
+
+.p1 {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* ------------------------------------------------ */
+/* -- ATTRIBUTION --------------------------------- */
+/* ------------------------------------------------ */
+
+.attribution-block {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    max-width: 1280px;*/
+    width: 1280px;
+    text-align: center;
+    font-size: 10px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 500;
+    }
+
+.attribution-block: link {
+    color: #C4E538;
+    }
+

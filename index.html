@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clover Systems / ADV Motion FINAL</title>
+    
+    <meta charset="utf-8">
+    
+    <!-- Tells mobile devices to not zoom out and to scale at 1 from start = SHIT! CAUSING AN ERROR -->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">  
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- Google Fonts: Railway -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,300i,400,400i,500,600,700,800,900" rel="stylesheet"><!-- font-family: 'Raleway', sans-serif; -->
+
+    <!-- Google Fonts: Playfair -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet"> <!-- font-family: 'Playfair Display', serif; -->
+
+    <!-- Jquery 3.x snippet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+    <!-- JavaScript Hotkeys -->    
+    <script src="js/jquery.hotkeys.js"></script>
+    
+</head>
+    
+    <body>
+
+        <!-- Animation elements Start Here -->
+            <div class="preLoaderContainer">
+                <div id="insidePreloader">
+                    <ul>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mask">
+                                <div class="color">
+                                    <img src="img/preLoader/colorBar.svg" alt="color bar">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!-- Pre-loading ENDS here -->
+    
+        <!-- NAV Bar starts HERE -->
+        
+    <div class="NAV-bar">
+        <button id="playbutton"><img src="img/nav/Bset-01.png" class="p1"/></button>
+        <button id="pausebutton"><img src="img/nav/Bset-02.png" class="p1"/></button>
+        <button id="resumebutton"><img src="img/nav/Bset-03.png" class="p1"/></button>
+        <button id="reversebutton"><img src="img/nav/Bset-04.png" class="p1"/></button>
+        <button id="speedupbutton"><img src="img/nav/Bset-05.png" class="p1"/></button>
+        <button id="slowdownbutton"><img src="img/nav/Bset-06.png" class="p1"/></button>
+        <button id="seek2secbutton"><img src="img/nav/Bset-07.png" class="p1"/></button>
+        <button id="middlebutton"><img src="img/nav/Bset-08.png" class="p1"/></button>
+        <button id="restartbutton"><img src="img/nav/Bset-09.png" class="p1"/></button>
+    </div>
+    
+        <!-- NAV Bar starts ENDS -->
+    
+    <div class="attribution-block">
+        <a href="http://dig.ccmixter.org/files/_ghost/25389">Reverie (small theme)</a> by _ghost (c) copyright 2010 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by/3.0/">Attribution (3.0)</a> license. Ft: Pitx</div>
+    
+    <div class="background">
+<!--    LAY-OUT GRID - TRASH ME-->
+        <div class="frame"><img src="img/frame/frame.svg" alt="Emerald Logo"/></div>
+        
+<!--    "INTRO" SLIDE #0 -->
+        <div class="slideZero">
+            <div class="text9">Clover Systems</div>
+            <div class="text9CAT">data &middot; logistics &middot; management</div>
+            <div class="text9Subhead">business made easier</div>
+            <div class="cloverLogoIntro"><img src="img/icons/CloverLogoBWhite-11.svg" alt="Emerald Logo"/></div>
+        </div>
+        
+<!--    "Question" SLIDE #0.5 -->
+        <div class="slideHalf">
+            <div class="slideHalfText1">What can</div>
+            <div class="slideHalfText2"><span class="bold900">Clover</span> <span class="light200">Cloud</span></div>
+            <div class="slideHalfText3">do for business?</div>
+            <div class="cloverCloudIcon"><img src="img/icons/cloud1Grad.svg" alt="Clover Cloud Icon"/></div>
+            <div class="whiteOverlayOnVideo"></div>            
+            <div class="meeting"><video playsinline autoplay muted loop id="meetingVid"><source src="video/CloverSystems.mp4" type="video/mp4"></video></div>
+        </div>
+
+<!--    "What is Clover Cloud" SLIDE #1 -->
+        <div class="slideSeven">
+
+            <div class="slideSevenHeader">What is Clover Cloud?</div>
+            <div class="slideSevenSubHead">Clover Cloud <span class="bold900">Advantage</span></div>
+            <div class="slideSevenBodyCopy">Clover Cloud is a comprehensive set of 24/7 services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters.</div>
+            <div class="WhatisCloud"><img src="img/icons/cloud1.svg" alt="Cloud Icon - Slide 1"/></div>
+            <div class="whiteOverlayOnVideo2"></div>            
+            <div class="laptop"><video playsinline autoplay muted loop id="laptopVid"><source src="video/laptop.mp4" type="video/mp4"></video></div>
+
+            
+<!--            <div class="Slide1Background"></div>-->
+        </div>
+
+<!--    "CLOUD" SLIDE #1 -->
+        <div class="slideOne">
+
+            <div class="slideOneHeader"><span class="light200sub">Clover</span> advantage #1</div>
+            <div class="slideOneSubHeader">Productivity</div>
+            <div class="text4">Clover cloud based applications maximize your teams efficiency and productivity no matter where they are or what platform they use.</div>
+            
+            <div class="cloud1"><img src="img/icons/cloud1.svg" alt="Cloud 1"/></div>
+            <div class="cloud2"><img src="img/icons/cloud2.svg" alt="Cloud 2"/></div>
+            <div class="cloud3"><img src="img/icons/cloud1.svg" alt="Cloud 3"/></div>
+            <div class="cloud4"><img src="img/icons/cloud2.svg" alt="Cloud 4"/></div>
+
+            <div class="profileIcon1"><img src="img/icons/profileIcon.svg" alt="Profile Icon 1"/></div>
+            <div class="profileIcon2"><img src="img/icons/profileIcon.svg" alt="Profile Icon 2"/></div>
+            <div class="profileIcon3"><img src="img/icons/profileIcon.svg" alt="Profile Icon 3"/></div>
+            <div class="profileIcon4"><img src="img/icons/profileIcon.svg" alt="Profile Icon 4"/></div>
+<!--            <div class="Slide1Background"></div>-->
+        </div>
+
+<!--    "GRAPH" SLIDE #2 -->
+        <div class="slideTwo">
+            <div class="slideTwoHeader"><span class="light200sub">Clover</span> advantage #2</div>
+            <div class="text5">Cloud based Real time analytics and stat tracking with convenient modular monitoring systems and alerts.</div>
+            <div class="dashes"><img src="img/graph/dashes2.svg" alt="Dashes"/></div>
+            <div class="graphContainer">
+                <div class="graphWave1"><img src="img/graph/graphA1.svg" alt="Graph Wave 1"/></div>
+                <div class="graphWave2"><img src="img/graph/graphA2.svg" alt="Graph Wave 2"/></div>
+                <div class="graphWave3"><img src="img/graph/graphA3.svg" alt="Graph Wave 3"/></div>
+            </div>
+        </div>
+        
+<!--    "COST & SCALE" SLIDE #3 -->
+        <div class="slideThreeContainer">
+            <div class="slideThreeSubHeader">Clover advantage #3</div>
+            <div class="slideThreeHeader">Scales to your needs</div>
+            <div class="slide3AdvantageDescription">Cloud whatever Real time analytics and stat tracking with convenient modular monitoring systems and alerts.</div>
+            <div class="building1"><img src="img/slide3/building-04.svg" alt="Small Business Image"/></div>
+            <div class="building2"><img src="img/slide3/building-03.svg" alt="Medium Business Image"/></div>
+            <div class="building3"><img src="img/slide3/building-02.svg" alt="Large Business Image"/></div>
+        </div>
+        
+<!--    "Fortune 500" SLIDE #5 -->
+        <div class="slideFive">
+            <div class="slideFiveSubHeader">Clover Advantage #4</div>
+            <div class="slideFiveHeader">Trusted</div>
+            <div class="slideFiveBodyCopy">Join startups, governments, and 90% of Fortune 500 businesses who run on the Clover Cloud today.</div>
+            <div class="fortune500MainLogo"><img src="img/slide5/fortune500MainLogo.svg" alt="Fortune 500 Main Logo"/></div>
+            <div class="F500CompanyLogos"><img src="img/slide5/Fortune500_CompanyBackground.jpg" alt="Fortune 500 Logos"/></div>
+        </div>
+        
+<!--    "Hand-Shake" SLIDE #8 -->
+        <div class="slideEightContainer">
+            <div class="slideEightSubHeader">Clover Advantage #4</div>
+            <div class="slideEightHeader ">Trusted</div>
+            <div class="slideEightBodyCopy">Join startups, governments, and 90% of Fortune 500 businesses who run on the Clover Cloud today.</div>
+            <div class="whiteOverlayOnVideo3"></div>            
+            <div class="handshake"><video playsinline autoplay muted loop id="handshakeVid"><source src="video/handshake.mp4" type="video/mp4"></video></div>
+        </div>
+        
+<!--    "OUTRO" SLIDE #6 -->
+        <div class="slideSix">
+            <div class="slideSixCompanyWordmark">Clover Systems</div>
+            <div class="slideSixSubHead">business made easier</div>
+            <div class="slideSixCompanyTraits">data &middot; logistics &middot; management</div>
+            <div class="slideSixCloverLogo"><img src="img/icons/CloverLogoBWhite-11.svg" alt="Emerald Logo"/></div>
+            <div class="callToActionLink"><a href="https://azure.microsoft.com/en-us/free/" target="_blank">click for more details</a></div>
+        </div>
+
+    </div>
+    
+    <script src="TweenMax.min.js"></script>
+    
+<script>
+
+    (function(){
+
+        var preLoader = new TimelineMax();
+        var t1 = new TimelineMax({paused:true}); /* Overall Animation */
+        var t4 = new TimelineMax({paused:true}); /* Controls Main NAV Bar Animation */
+        var t5 = new TimelineMax({paused:true}); /* Background Animation on Load */
+                
+        var intro_Music = document.createElement('audio');
+        
+        
+//        intro_Music.setAttribute('src', 'sound/06TheMonastery.m4a');
+        intro_Music.setAttribute('src', 'sound/MobyHotelIntro.m4a');
+//        intro_Music.setAttribute('src', 'sound/18 Footsteps.m4a');
+//        intro_Music.setAttribute('src', 'sound/01FirstBreathAfterComa.m4a');
+//        intro_Music.setAttribute('src', 'sound/reverie.mp3');
+        
+        var meetingVid = document.getElementById("meetingVid"); 
+        var laptop = document.getElementById("meetingVid"); 
+        
+        var buttons = $('button');
+        
+//    PRE-LOADER Animation w/Load Content function 
+        function loadContent(){
+            var preLoader = new TimelineMax();
+            preLoader.to(".preLoaderContainer", 0.75, {autoAlpha:0, ease:Power3.easeOut});
+
+            preLoader.staggerFromTo('.mask', 0.9, 
+             {height:6, width:1, autoAlpha: 0.3, ease: Power4.easeInOut}, 
+             {height:96, width:3, autoAlpha: 1, ease: Power4.easeInOut, repeat:2, yoyo:true}, 0.05);
+
+            t4.delay(1).play();
+            t5.delay(1).play();                    
+        }
+
+        preLoader.staggerFromTo('.mask', 0.9, 
+             {height:6, width:1, autoAlpha: 0.3, ease: Power4.easeInOut}, 
+             {height:96, width:3, autoAlpha: 1, ease: Power4.easeInOut, repeat:4, yoyo:true, onComplete:loadContent}, 0.05);
+        
+//    NAV BAR Animation 
+        t4.staggerFrom(buttons, 0.5,{autoAlpha:0, y:-30, ease: Circ.easeOut}, 0.1);
+        
+//    Animation Opening 
+        t5.from(".background",2,{opacity: 0, width: 0, height: 360, ease: Power4.easeOut}); 
+        t5.from(".attribution-block",2,{opacity: 0, y:20, ease: Power4.easeOut},"-=1.5"); 
+        t5.from(".cloverLogoIntro",1,{opacity: 0, scale: 0, ease: Power4.easeOut},"-=0.75"); 
+        t5.from(".text9",1,{opacity: 0, y:30, ease: Power4.easeOut},"-=1.25"); 
+        t5.from(".text9Subhead",1,{opacity: 0, ease: Power4.easeOut},"-=0.75"); 
+        t5.from(".text9CAT",1,{opacity: 0, ease: Power4.easeOut},"-=0.5"); 
+        
+//    Music - Plays only when play button is pushed 
+        t1.call(function(){intro_Music.play()});
+        
+        
+        
+//    "INTRO" SLIDE #0
+        t1.to(".slideZero",1.5,{x:-1920, ease: Power3.easeOut}); 
+        
+        
+//    "What can Clover do for business" SLIDE #0.5
+        t1.from(".text1",1.25,{opacity: 0, y:10, ease: Back.easeOut}, 1,"-=3.5");
+        t1.to(".text1",1,{opacity: 0, ease: Power4.easeOut});
+        t1.to(".slideHalf",1.5,{x:-1920, ease: Power3.easeIn}); 
+        
+//    "What is Clover Cloud" SLIDE #1
+        t1.from("#laptopVid",1,{opacity: 0, ease: Power4.easeOut},"+=1"); 
+        t1.from(".WhatisCloud",1,{opacity: 0, y:40, ease: Power4.easeOut},"+=1"); 
+        t1.from(".slideSevenSubHead",1,{opacity: 0, y:40, ease: Power4.easeOut},"+=1"); 
+        t1.from(".slideSevenHeader",1,{opacity: 0, y:40, ease: Back.easeOut},"+=1"); 
+        t1.from(".slideSevenBodyCopy",1,{opacity: 0, y:40, ease: Power4.easeOut},"+=1"); 
+        t1.to(".slideSeven",1.75,{x:-1920, ease: Power3.easeOut},"+=3"); 
+        
+//    "CLOUD" SLIDE #1
+        t1.from(".slideOneSubHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideOneHeader",1,{opacity: 0, y:40, ease: Back.easeOut},"-=0.5"); 
+        t1.from(".text4",1,{opacity: 0, y:40, ease: Power4.easeOut}); 
+        
+        t1.to(".profileIcon1",0.5,{opacity: 1, y:20, ease: Back.easeOut}); 
+        t1.to(".profileIcon2",0.5,{opacity: 1, y:20, ease: Back.easeOut},"-=0.2"); 
+        t1.to(".profileIcon3",0.5,{opacity: 1, y:20, ease: Back.easeOut},"-=0.2"); 
+        t1.to(".profileIcon4",0.5,{opacity: 1, y:20, ease: Back.easeOut},"-=0.2"); 
+
+        t1.to(".cloud1",1,{opacity: 1, y:40, ease: Back.easeOut}); 
+        t1.to(".cloud2",1,{opacity: 1, y:40, ease: Back.easeOut},"-=0.2"); 
+        t1.to(".cloud3",1,{opacity: 1, y:40, ease: Back.easeOut},"-=0.2"); 
+        t1.to(".cloud4",1,{opacity: 1, y:40, ease: Back.easeOut},"-=0.2"); 
+        
+        t1.to(".slideOne",1.75,{x:-1920, ease: Power3.easeOut}); 
+
+        
+//    "EASY DEVELOPMENT" SLIDE #2
+        
+        t1.from(".slideTwoHeader",1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        
+//    "VERSATILE TOOLS" SLIDE #3
+        
+//    Feature: "Convenient health monitoring and alerts"
+        t1.from(".text5",1,{opacity: 0, y:40, ease: Power4.easeOut}); 
+        t1.from(".dashes",1,{y:150, opacity: 0, ease: Power3.easeOut}); 
+        t1.from(".graphWave1",1,{y:150, opacity: 0, ease: Power3.easeOut}); 
+        t1.from(".graphWave2",1,{y:150, opacity: 0, ease: Power3.easeOut}); 
+        t1.from(".graphWave3",1,{y:150, opacity: 0, ease: Power3.easeOut}); 
+        t1.to(".graphWave1",5,{x:-800, ease: Power0.easeNone}); 
+        t1.to(".graphWave2",4,{x:-800, ease: Power0.easeNone}, "-=2.5"); 
+        t1.to(".graphWave3",4,{x:-800, ease: Power0.easeNone}, "-=5"); 
+//        t1.to(".text5",1,{opacity: 0,ease: Power3.easeOut}, "+=1"); 
+        t1.to(".slideTwo",1.75,{x:-1920, ease: Power3.easeOut}); 
+        
+//    "EASY DEVELOPMENT" SLIDE #3
+        t1.from(".slideThreeSubHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideThreeHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slide3AdvantageDescription",1,{opacity: 0, y:40, ease: Power4.easeOut}); 
+        t1.from(".building1", 1,{opacity: 0, y:20, ease: Power3.easeOut}); 
+        t1.from(".building2", 1,{opacity: 0, y:20, ease: Power3.easeOut}); 
+        t1.from(".building3", 1,{opacity: 0, y:20, ease: Power3.easeOut}); 
+        t1.to(".slideThreeContainer", 1.75,{x:-1920, ease: Power3.easeOut}); 
+        
+//    "EASY DEVELOPMENT" SLIDE #4
+        
+//    "Fortune 500" SLIDE #5
+        t1.from(".slideFiveSubHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideFiveHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideFiveBodyCopy",1,{opacity: 0, y:40, ease: Power4.easeOut}); 
+        t1.from(".fortune500MainLogo", 1,{opacity: 0, y:20, ease: Power3.easeOut}); 
+        t1.from(".F500CompanyLogos", 1,{opacity: 0, y:20, ease: Power3.easeOut}); 
+        t1.to(".slideFiveContainer", 1.75,{x:-1920, ease: Power3.easeOut}); 
+        
+//    "EASY DEVELOPMENT" SLIDE #8
+        t1.from("#handshakeVid",1,{opacity: 0, ease: Power4.easeOut},"+=1"); 
+        t1.from(".slideEightSubHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideEightHeader", 1,{opacity: 0, y:40, ease: Back.easeOut}); 
+        t1.from(".slideEightBodyCopy",1,{opacity: 0, y:40, ease: Power4.easeOut}); 
+        t1.to(".slideEightContainer", 1.75,{x:-1920, ease: Power3.easeOut}); 
+        
+//    "Outro" SLIDE #6
+        t1.from(".slideSix",1,{x:1280, ease: Power3.easeOut}); 
+//        t1.from(".text9Subhead",1,{opacity: 0, ease: Power3.easeOut}, "+=0.75"); 
+
+        
+//
+//        
+//    "NAV BAR Functionality #4
+        
+        var clickStarted = false;
+
+        $("#playbutton").on("click",function(){
+            t1.play();
+//            t2.play();
+//            t3.play();
+            t4.play();
+            t5.play();
+
+            intro_Music.play();
+            meetingVid.play();
+            laptop.play();
+            
+            t1.timeScale(1);
+//            t2.timeScale(1);
+//            t3.timeScale(1);
+            t4.play();
+
+            intro_Music.playbackRate = 1;
+
+            if(intro_Music.currentTime > 0) {
+                intro_Music.play();
+            }
+        });
+
+
+        $("#resumebutton").on("click",function(){
+            t1.play();
+//            t2.play();
+//            t3.play();
+            t4.play();
+            t5.play();
+
+            intro_Music.play();
+
+            if(click.currentTime > 0) {
+                click.play();
+            }
+        });
+
+        $("#pausebutton").on("click",function(){
+            t1.pause();
+//            t2.pause();
+//            t3.pause();
+            t4.pause();
+            t5.pause();
+
+            
+            intro_Music.pause();
+            
+            meetingVid.pause();
+            
+            if(!click.paused) {
+                clickStarted = true;
+                click.pause();
+            }
+        });
+
+        $("#restartbutton").on("click",function(){
+            t1.play(0);
+//            t2.play(0);
+//            t3.play(0);
+            t4.play(0);
+            t5.play(0);
+
+            intro_Music.pause();
+            intro_Music.currentTime = 0;
+
+            t1.timeScale(1);
+//            t2.timeScale(1);
+//            t3.timeScale(1);
+            t4.timeScale(1);
+            t5.timeScale(1);
+
+            intro_Music.playbackRate = 1;
+        });
+
+        $("#seek2secbutton").on("click", function(){
+            newTime1 = t1.time() + 2;
+//            newTime2 = t2.time() + 2;
+//            newTime3 = t3.time() + 2;
+            newTime4 = t4.time() + 2;
+            newTime5 = t5.time() + 2;
+
+            t1.play(newTime1);
+//            t2.play(newTime2);
+//            t3.play(newTime3);
+            t4.play(newTime4);
+            t5.play(newTime5);
+//          crickets.currentTime = crickets.currentTime + 2;
+
+            if(!click.paused) {
+                click.currentTime = click.currentTime + 2;
+            }
+        });
+
+        $("#middlebutton").on("click", function(){
+            middleTime1 = t1.duration() / 2;
+//            middleTime2 = t2.duration() / 2;
+//            middleTime3 = t3.duration() / 2;
+            middleTime4 = t4.duration() / 2;
+            middleTime5 = t5.duration() / 2;
+
+            t1.play(middleTime1);
+//            t2.play(middleTime2);
+//            t3.play(middleTime3);
+            t4.play(middleTime4);
+            t5.play(middleTime4);
+
+//          crickets.currentTime = crickets.duration / 2;
+
+            click.currentTime = 0;
+            click.pause();
+        });
+
+        $("#speedupbutton").on("click", function(){
+            t1.timeScale(2);
+//            t2.timeScale(2);
+//            t3.timeScale(2);
+            t4.timeScale(2);
+            t5.timeScale(2);
+
+            intro_Music.playbackRate = 2;
+        });
+
+        $("#reversebutton").on("click", function(){
+            t1.reverse();
+//            t2.reverse();
+//            t3.reverse();
+            t4.reverse();
+            t5.reverse();
+
+//          crickets.muted = true;
+            click.muted = true;
+        });
+
+        $("#slowdownbutton").on("click", function(){
+            t1.timeScale(0.5);
+//            t2.timeScale(0.5);
+//            t3.timeScale(0.5);
+            t4.timeScale(0.5);
+            t5.timeScale(0.5);
+
+            intro_Music.playbackRate = 0.5;
+        });
+        
+//
+//        
+//    "NAV BAR Hotkeys
+        
+        $(document).bind('keydown', 'p', function() {
+           $("#playbutton").click();
+        });
+
+        $(document).bind('keydown', 'space', function() {
+           $("#pausebutton").click();
+        });
+
+        $(document).bind('keydown', 'r', function() {
+           $("#restartbutton").click();
+        });
+        
+    }());
+    
+</script> 
+    
+</body>
+    
+</html>
+
+
+<!--
+WORKING NOTES!
+
+1. Bottom Stroke isn't animating??? - under".cloverlogo
+-->
+
+
+
+<!--https://azure.microsoft.com/en-us/services/cloud-services/-->
+
+
+<!--Reverie (small theme) by _ghost (c) copyright 2010 Licensed under a Creative Commons Attribution (3.0) license. http://dig.ccmixter.org/files/_ghost/25389 Ft: Pitx-->
+
+
+
+
